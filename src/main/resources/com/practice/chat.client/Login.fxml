@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practice.chat.client.LoginController">
+   <children>
+      <VBox layoutX="80.0" layoutY="86.0" prefHeight="88.0" prefWidth="229.0">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Label" />
+                  <TextField />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Label" />
+                  <TextField />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="155.0" layoutY="232.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="289.0" layoutY="232.0" mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>
