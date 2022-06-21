@@ -9,6 +9,7 @@ import java.net.Socket;
 
 public class Client implements ChatInterface {
 
+
     public static void main(String[] args) {
         try {
             Socket socket = new Socket(host, Port);
