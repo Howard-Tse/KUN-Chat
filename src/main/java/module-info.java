@@ -5,6 +5,7 @@ module com.practice.practice {
 
     opens com.practice.chat.client to javafx.fxml;
 
+
     exports com.practice.chat.client;
     exports com.practice.chat.server;
     exports com.practice.chat.database;

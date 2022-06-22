@@ -10,7 +10,6 @@ import java.net.Socket;
 
 public class Server implements ChatInterface {
     private static ServerSocket serverSocket;
-
     static {
         try {
             serverSocket = new ServerSocket(Port);

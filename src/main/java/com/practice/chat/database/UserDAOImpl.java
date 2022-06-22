@@ -18,7 +18,6 @@ public class UserDAOImpl implements UserDAO {
             user = new User();
             set.getString(1);
         }
-
         return user;
     }
 

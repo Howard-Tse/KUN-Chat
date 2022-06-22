@@ -9,7 +9,6 @@ public interface ChatInterface {
     String author = """
             
             """;
-
     enum Error {
         ConnectFailed
     }

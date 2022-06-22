@@ -14,4 +14,5 @@ public interface UserDAO {
     void deleteFriend(User user, String number);
     List<User> executeSQL(String sql) throws SQLException;
     List<String> searchUserFriends(User user);
+
 }

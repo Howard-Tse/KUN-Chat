@@ -8,7 +8,6 @@ public class ChatLog {
     private String receiverNumber;  //接收方账号
     private String message; //发送的消息
     private LocalDateTime sendTime; //发送日期
-
     public ChatLog() {
         this("", "", "", "", LocalDateTime.of(1970, 1, 1, 0, 0));
     }

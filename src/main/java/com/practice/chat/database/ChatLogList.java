@@ -20,4 +20,5 @@ public class ChatLogList extends LinkedList {
     public void setChatLogIDSeed(int chatLogIDSeed) {
         this.chatLogIDSeed = chatLogIDSeed;
     }
+
 }
