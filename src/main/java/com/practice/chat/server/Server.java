@@ -2,9 +2,7 @@ package com.practice.chat.server;
 
 import com.practice.chat.ChatInterface;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -21,6 +19,7 @@ public class Server implements ChatInterface {
     public static void main(String[] args) {
         try {
             while(true) {
+                Logger logger = Logger.getInstance();
                 Socket socket = serverSocket.accept();
                 System.out.println("accept " + socket.getInetAddress().getHostAddress());
 

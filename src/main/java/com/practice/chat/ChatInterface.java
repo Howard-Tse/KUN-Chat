@@ -9,9 +9,6 @@ public interface ChatInterface {
     String author = """
             
             """;
-    enum Error {
-        ConnectFailed
-    }
 
     String charsetName = "utf-8";
 }

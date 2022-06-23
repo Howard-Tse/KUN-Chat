@@ -1,4 +1,5 @@
 package com.practice.chat.server;
 
-public class MessageLog {
+public class RequestProcessor {
+
 }
