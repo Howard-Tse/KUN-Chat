@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.7008032128514057" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practice.chat.client.controllers.ChatController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TreeView fx:id="treeView" prefHeight="276.0" prefWidth="600.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TextArea fx:id="textArea" prefHeight="116.0" prefWidth="599.0" promptText="在此处输入消息" />
+            <Button layoutX="491.0" layoutY="73.0" mnemonicParsing="false" onAction="#onSendMsgButtonClicked" prefHeight="29.0" prefWidth="96.0" text="发送消息">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

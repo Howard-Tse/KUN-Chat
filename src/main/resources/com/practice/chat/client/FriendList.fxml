@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="560.0" maxWidth="331.0" minHeight="560.0" minWidth="331.0" prefHeight="560.0" prefWidth="331.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practice.chat.client.controllers.FriendListController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="109.0" fitWidth="116.0" onMouseClicked="#onProfileImageViewMouseClicked" pickOnBounds="true" preserveRatio="true" />
+      <Pane layoutY="109.0" prefHeight="395.0" prefWidth="331.0">
+         <children>
+            <TreeView fx:id="treeView" prefHeight="405.0" prefWidth="332.0" />
+         </children>
+      </Pane>
+      <HBox layoutX="-1.0" layoutY="501.0" prefHeight="37.0" prefWidth="333.0">
+         <children>
+            <Group>
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="1.0" layoutY="14.0" stroke="TRANSPARENT" strokeType="INSIDE" width="165.0" />
+                  <Text layoutX="56.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="联系人">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Group>
+            <Group onMouseClicked="#onFriendCircleButtonClicked">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="1.0" layoutY="1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="167.0" />
+                  <Text layoutX="58.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="朋友圈">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Group>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="138.0" layoutY="3.0" prefHeight="109.0" prefWidth="194.0" spacing="5.0">
+         <children>
+            <Text fx:id="textFieldName" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="158.00000190734863" />
+            <TextField fx:id="textFieldSignature" alignment="CENTER" prefHeight="40.0" prefWidth="194.0" promptText="显示个性签名~" />
+            <Group onMouseClicked="#onFriendSystemButtonClicked">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#21ff76" height="40.0" layoutX="7.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="193.0" />
+                  <Text layoutX="32.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="好友管理" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Algerian" size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Group>
+         </children>
+      </VBox>
+      <AmbientLight color="CHARTREUSE" lightOn="true" />
+   </children>
+</AnchorPane>

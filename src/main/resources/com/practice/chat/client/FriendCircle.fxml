@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practice.chat.client.controllers.FriendCircleController">
+   <children>
+      <ImageView fx:id="bk" fitHeight="155.0" fitWidth="550.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="table" layoutY="155.0" prefHeight="405.0" prefWidth="556.0">
+        <columns>
+          <TableColumn fx:id="headPicture" prefWidth="75.0" />
+            <TableColumn fx:id="mainText" prefWidth="224.0" />
+            <TableColumn fx:id="mainPicture" prefWidth="256.0" />
+        </columns>
+      </TableView>
+      <Button layoutX="510.0" layoutY="131.0" mnemonicParsing="false" onAction="#onShareButtonClicked" text="发布" />
+   </children>
+</AnchorPane>

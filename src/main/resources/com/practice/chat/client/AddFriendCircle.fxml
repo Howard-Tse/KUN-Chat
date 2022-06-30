@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:controller="com.practice.chat.client.controllers.AddFriendCircleController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="mainText" alignment="TOP_LEFT" prefHeight="119.0" prefWidth="342.0" text="这一刻的想法......" />
+      <ImageView fx:id="mainPicture" fitHeight="221.0" fitWidth="342.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="addPicture" layoutY="119.0" mnemonicParsing="false" onAction="#onChoosePhotoButtonClicked" prefHeight="22.0" prefWidth="83.0" text="添加照片" />
+      <Button fx:id="show" layoutX="230.0" layoutY="375.0" mnemonicParsing="false" onAction="#onShareButtonClicked" text="分享到我的朋友圈" />
+   </children>
+</AnchorPane>

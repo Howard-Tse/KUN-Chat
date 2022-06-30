@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practice.chat.client.controllers.FriendSystemController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <HBox layoutX="92.0" layoutY="74.0" spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="请输入好友账号">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="textFriendID" prefHeight="30.0" prefWidth="238.0" />
+               </children>
+            </HBox>
+            <Button layoutX="215.0" layoutY="113.0" mnemonicParsing="false" onAction="#onAddFriendButtonClicked" prefHeight="38.0" prefWidth="114.0" text="确认添加" />
+            <Text fx:id="textNotice" fill="RED" layoutX="194.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="210.240234375" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TreeView fx:id="treeView" layoutY="46.0" prefHeight="193.0" prefWidth="599.0" />
+            <Text layoutX="225.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="系统消息">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

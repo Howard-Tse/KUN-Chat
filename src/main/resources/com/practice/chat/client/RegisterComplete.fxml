@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" prefHeight="295.0" prefWidth="567.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practice.chat.client.controllers.RegisterCompleteController">
+   <children>
+      <VBox alignment="CENTER" layoutX="76.0" layoutY="52.0" spacing="30.0">
+         <children>
+            <Text fill="#4b30bf" strokeType="OUTSIDE" strokeWidth="0.0" text="恭喜您！你已创建成功！你的账户为：" wrappingWidth="414.64019775390625">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="textFieldNumber" alignment="CENTER" editable="false" prefHeight="42.0" prefWidth="295.0">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#onGoToLoginButtonClicked" text="去登陆">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
